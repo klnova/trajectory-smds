@@ -1,0 +1,315 @@
+%General Mission Analysis Tool(GMAT) Script
+%Created: 2025-07-08 00:31:01
+
+%----------------------------------------
+%---------- User-Defined Celestial Bodies
+%----------------------------------------
+
+Create Moon Ariel;
+Ariel.NAIFId = 701;
+Ariel.OrbitSpiceKernelName = {'C:\Users\Lucas\Dell Laptop Backup Feb 22, 2023\Arzy\Desktop\University\Corn\GMAT\gmat-win-R2025a\GMAT_R2025a\data\planetary_ephem\spk\ura182.bsp'};
+Ariel.OrbitColor = Tan;
+Ariel.TargetColor = DarkGray;
+Ariel.EquatorialRadius = 578.9;
+Ariel.Flattening = 0;
+Ariel.Mu = 86.0946;
+Ariel.PosVelSource = 'SPICE';
+Ariel.CentralBody = 'Uranus';
+Ariel.RotationDataSource = 'IAUSimplified';
+Ariel.OrientationEpoch = 21545;
+Ariel.SpinAxisRAConstant = 0;
+Ariel.SpinAxisRARate = 0;
+Ariel.SpinAxisDECConstant = 90;
+Ariel.SpinAxisDECRate = 0;
+Ariel.RotationConstant = 0;
+Ariel.RotationRate = 0;
+Ariel.TextureMapFileName = 'GenericCelestialBody.jpg';
+Ariel.3DModelFile = '';
+Ariel.3DModelOffsetX = 0;
+Ariel.3DModelOffsetY = 0;
+Ariel.3DModelOffsetZ = 0;
+Ariel.3DModelRotationX = 0;
+Ariel.3DModelRotationY = 0;
+Ariel.3DModelRotationZ = 0;
+Ariel.3DModelScale = 10;
+
+Create Moon Miranda;
+Miranda.NAIFId = 705;
+Miranda.OrbitSpiceKernelName = {'C:\Users\Lucas\Dell Laptop Backup Feb 22, 2023\Arzy\Desktop\University\Corn\GMAT\gmat-win-R2025a\GMAT_R2025a\data\planetary_ephem\spk\ura182.bsp'};
+Miranda.OrbitColor = Tan;
+Miranda.TargetColor = DarkGray;
+Miranda.EquatorialRadius = 235.7;
+Miranda.Flattening = 0;
+Miranda.Mu = 4.4048;
+Miranda.PosVelSource = 'SPICE';
+Miranda.CentralBody = 'Uranus';
+Miranda.RotationDataSource = 'IAUSimplified';
+Miranda.OrientationEpoch = 21545;
+Miranda.SpinAxisRAConstant = 0;
+Miranda.SpinAxisRARate = 0;
+Miranda.SpinAxisDECConstant = 90;
+Miranda.SpinAxisDECRate = 0;
+Miranda.RotationConstant = 0;
+Miranda.RotationRate = 0;
+Miranda.TextureMapFileName = 'GenericCelestialBody.jpg';
+Miranda.3DModelFile = '';
+Miranda.3DModelOffsetX = 0;
+Miranda.3DModelOffsetY = 0;
+Miranda.3DModelOffsetZ = 0;
+Miranda.3DModelRotationX = 0;
+Miranda.3DModelRotationY = 0;
+Miranda.3DModelRotationZ = 0;
+Miranda.3DModelScale = 10;
+
+Create Moon Umbriel;
+Umbriel.NAIFId = 702;
+Umbriel.OrbitSpiceKernelName = {'C:\Users\Lucas\Dell Laptop Backup Feb 22, 2023\Arzy\Desktop\University\Corn\GMAT\gmat-win-R2025a\GMAT_R2025a\data\planetary_ephem\spk\ura182.bsp'};
+Umbriel.OrbitColor = Tan;
+Umbriel.TargetColor = DarkGray;
+Umbriel.EquatorialRadius = 584.7;
+Umbriel.Flattening = 0;
+Umbriel.Mu = 81.4228;
+Umbriel.PosVelSource = 'SPICE';
+Umbriel.CentralBody = 'Uranus';
+Umbriel.RotationDataSource = 'IAUSimplified';
+Umbriel.OrientationEpoch = 21545;
+Umbriel.SpinAxisRAConstant = 0;
+Umbriel.SpinAxisRARate = 0;
+Umbriel.SpinAxisDECConstant = 90;
+Umbriel.SpinAxisDECRate = 0;
+Umbriel.RotationConstant = 0;
+Umbriel.RotationRate = 0;
+Umbriel.TextureMapFileName = 'GenericCelestialBody.jpg';
+Umbriel.3DModelFile = '';
+Umbriel.3DModelOffsetX = 0;
+Umbriel.3DModelOffsetY = 0;
+Umbriel.3DModelOffsetZ = 0;
+Umbriel.3DModelRotationX = 0;
+Umbriel.3DModelRotationY = 0;
+Umbriel.3DModelRotationZ = 0;
+Umbriel.3DModelScale = 10;
+
+Create Moon Mab;
+Mab.NAIFId = 726;
+Mab.OrbitSpiceKernelName = {'C:\Users\Lucas\Dell Laptop Backup Feb 22, 2023\Arzy\Desktop\University\Corn\GMAT\gmat-win-R2025a\GMAT_R2025a\data\planetary_ephem\spk\ura115.bsp'};
+Mab.OrbitColor = Tan;
+Mab.TargetColor = DarkGray;
+Mab.EquatorialRadius = 12;
+Mab.Flattening = 0;
+Mab.Mu = 6.674e-05;
+Mab.PosVelSource = 'SPICE';
+Mab.CentralBody = 'Uranus';
+Mab.RotationDataSource = 'IAUSimplified';
+Mab.OrientationEpoch = 21545;
+Mab.SpinAxisRAConstant = 0;
+Mab.SpinAxisRARate = 0;
+Mab.SpinAxisDECConstant = 90;
+Mab.SpinAxisDECRate = 0;
+Mab.RotationConstant = 0;
+Mab.RotationRate = 0;
+Mab.TextureMapFileName = 'GenericCelestialBody.jpg';
+Mab.3DModelFile = '';
+Mab.3DModelOffsetX = 0;
+Mab.3DModelOffsetY = 0;
+Mab.3DModelOffsetZ = 0;
+Mab.3DModelRotationX = 0;
+Mab.3DModelRotationY = 0;
+Mab.3DModelRotationZ = 0;
+Mab.3DModelScale = 10;
+
+Create Moon Titania;
+Titania.NAIFId = 703;
+Titania.OrbitSpiceKernelName = {'C:\Users\Lucas\Dell Laptop Backup Feb 22, 2023\Arzy\Desktop\University\Corn\GMAT\gmat-win-R2025a\GMAT_R2025a\data\planetary_ephem\spk\ura182.bsp'};
+Titania.OrbitColor = Tan;
+Titania.TargetColor = DarkGray;
+Titania.EquatorialRadius = 788.9;
+Titania.Flattening = 0;
+Titania.Mu = 228.2508;
+Titania.PosVelSource = 'SPICE';
+Titania.CentralBody = 'Uranus';
+Titania.RotationDataSource = 'IAUSimplified';
+Titania.OrientationEpoch = 21545;
+Titania.SpinAxisRAConstant = 0;
+Titania.SpinAxisRARate = 0;
+Titania.SpinAxisDECConstant = 90;
+Titania.SpinAxisDECRate = 0;
+Titania.RotationConstant = 0;
+Titania.RotationRate = 0;
+Titania.TextureMapFileName = 'GenericCelestialBody.jpg';
+Titania.3DModelFile = '';
+Titania.3DModelOffsetX = 0;
+Titania.3DModelOffsetY = 0;
+Titania.3DModelOffsetZ = 0;
+Titania.3DModelRotationX = 0;
+Titania.3DModelRotationY = 0;
+Titania.3DModelRotationZ = 0;
+Titania.3DModelScale = 10;
+
+Create Moon Oberon;
+Oberon.NAIFId = 704;
+Oberon.OrbitSpiceKernelName = {'C:\Users\Lucas\Dell Laptop Backup Feb 22, 2023\Arzy\Desktop\University\Corn\GMAT\gmat-win-R2025a\GMAT_R2025a\data\planetary_ephem\spk\ura182.bsp'};
+Oberon.OrbitColor = Tan;
+Oberon.TargetColor = DarkGray;
+Oberon.EquatorialRadius = 761.4;
+Oberon.Flattening = 0;
+Oberon.Mu = 192.2112;
+Oberon.PosVelSource = 'SPICE';
+Oberon.CentralBody = 'Uranus';
+Oberon.RotationDataSource = 'IAUSimplified';
+Oberon.OrientationEpoch = 21545;
+Oberon.SpinAxisRAConstant = 0;
+Oberon.SpinAxisRARate = 0;
+Oberon.SpinAxisDECConstant = 90;
+Oberon.SpinAxisDECRate = 0;
+Oberon.RotationConstant = 0;
+Oberon.RotationRate = 0;
+Oberon.TextureMapFileName = 'GenericCelestialBody.jpg';
+Oberon.3DModelFile = '';
+Oberon.3DModelOffsetX = 0;
+Oberon.3DModelOffsetY = 0;
+Oberon.3DModelOffsetZ = 0;
+Oberon.3DModelRotationX = 0;
+Oberon.3DModelRotationY = 0;
+Oberon.3DModelRotationZ = 0;
+Oberon.3DModelScale = 10;
+
+%----------------------------------------
+%---------- Spacecraft
+%----------------------------------------
+
+Create Spacecraft DefaultSC;
+DefaultSC.DateFormat = TAIModJulian;
+DefaultSC.Epoch = '21545';
+DefaultSC.CoordinateSystem = EarthMJ2000Eq;
+DefaultSC.DisplayStateType = Cartesian;
+DefaultSC.X = 7100;
+DefaultSC.Y = 0;
+DefaultSC.Z = 1300;
+DefaultSC.VX = 0;
+DefaultSC.VY = 7.35;
+DefaultSC.VZ = 1;
+DefaultSC.DryMass = 850;
+DefaultSC.Cd = 2.2;
+DefaultSC.Cr = 1.8;
+DefaultSC.DragArea = 15;
+DefaultSC.SRPArea = 1;
+DefaultSC.SPADDragScaleFactor = 1;
+DefaultSC.SPADSRPScaleFactor = 1;
+DefaultSC.AtmosDensityScaleFactor = 1;
+DefaultSC.ExtendedMassPropertiesModel = 'None';
+DefaultSC.NAIFId = -10016001;
+DefaultSC.NAIFIdReferenceFrame = -9016001;
+DefaultSC.OrbitColor = Red;
+DefaultSC.TargetColor = Teal;
+DefaultSC.OrbitErrorCovariance = [ 1e+70 0 0 0 0 0 ; 0 1e+70 0 0 0 0 ; 0 0 1e+70 0 0 0 ; 0 0 0 1e+70 0 0 ; 0 0 0 0 1e+70 0 ; 0 0 0 0 0 1e+70 ];
+DefaultSC.CdSigma = 1e+70;
+DefaultSC.CrSigma = 1e+70;
+DefaultSC.Id = 'SatId';
+DefaultSC.Attitude = CoordinateSystemFixed;
+DefaultSC.SPADSRPInterpolationMethod = Bilinear;
+DefaultSC.SPADSRPScaleFactorSigma = 1e+70;
+DefaultSC.SPADDragInterpolationMethod = Bilinear;
+DefaultSC.SPADDragScaleFactorSigma = 1e+70;
+DefaultSC.AtmosDensityScaleFactorSigma = 1e+70;
+DefaultSC.ModelFile = 'aura.3ds';
+DefaultSC.ModelOffsetX = 0;
+DefaultSC.ModelOffsetY = 0;
+DefaultSC.ModelOffsetZ = 0;
+DefaultSC.ModelRotationX = 0;
+DefaultSC.ModelRotationY = 0;
+DefaultSC.ModelRotationZ = 0;
+DefaultSC.ModelScale = 1;
+DefaultSC.AttitudeDisplayStateType = 'Quaternion';
+DefaultSC.AttitudeRateDisplayStateType = 'AngularVelocity';
+DefaultSC.AttitudeCoordinateSystem = EarthMJ2000Eq;
+DefaultSC.EulerAngleSequence = '321';
+
+%----------------------------------------
+%---------- ForceModels
+%----------------------------------------
+
+Create ForceModel DefaultProp_ForceModel;
+DefaultProp_ForceModel.CentralBody = Earth;
+DefaultProp_ForceModel.PrimaryBodies = {Earth};
+DefaultProp_ForceModel.Drag = None;
+DefaultProp_ForceModel.SRP = Off;
+DefaultProp_ForceModel.RelativisticCorrection = Off;
+DefaultProp_ForceModel.ErrorControl = RSSStep;
+DefaultProp_ForceModel.GravityField.Earth.Degree = 4;
+DefaultProp_ForceModel.GravityField.Earth.Order = 4;
+DefaultProp_ForceModel.GravityField.Earth.StmLimit = 100;
+DefaultProp_ForceModel.GravityField.Earth.PotentialFile = 'JGM2.cof';
+DefaultProp_ForceModel.GravityField.Earth.TideModel = 'None';
+
+%----------------------------------------
+%---------- Propagators
+%----------------------------------------
+
+Create Propagator DefaultProp;
+DefaultProp.FM = DefaultProp_ForceModel;
+DefaultProp.Type = RungeKutta89;
+DefaultProp.InitialStepSize = 60;
+DefaultProp.Accuracy = 9.999999999999999e-12;
+DefaultProp.MinStep = 0.001;
+DefaultProp.MaxStep = 2700;
+DefaultProp.MaxStepAttempts = 50;
+DefaultProp.StopIfAccuracyIsViolated = true;
+
+%----------------------------------------
+%---------- Subscribers
+%----------------------------------------
+
+Create OrbitView DefaultOrbitView;
+DefaultOrbitView.SolverIterations = Current;
+DefaultOrbitView.UpperLeft = [ 0.002520478890989288 0 ];
+DefaultOrbitView.Size = [ 0.5003150598613737 0.4502732240437158 ];
+DefaultOrbitView.RelativeZOrder = 756;
+DefaultOrbitView.Maximized = false;
+DefaultOrbitView.Add = {DefaultSC, Earth};
+DefaultOrbitView.CoordinateSystem = EarthMJ2000Eq;
+DefaultOrbitView.DrawObject = [ true true ];
+DefaultOrbitView.DataCollectFrequency = 1;
+DefaultOrbitView.UpdatePlotFrequency = 50;
+DefaultOrbitView.NumPointsToRedraw = 0;
+DefaultOrbitView.ShowPlot = true;
+DefaultOrbitView.MaxPlotPoints = 20000;
+DefaultOrbitView.ShowLabels = true;
+DefaultOrbitView.ViewPointReference = Earth;
+DefaultOrbitView.ViewPointVector = [ 30000 0 0 ];
+DefaultOrbitView.ViewDirection = Earth;
+DefaultOrbitView.ViewScaleFactor = 1;
+DefaultOrbitView.ViewUpCoordinateSystem = EarthMJ2000Eq;
+DefaultOrbitView.ViewUpAxis = Z;
+DefaultOrbitView.EclipticPlane = Off;
+DefaultOrbitView.XYPlane = On;
+DefaultOrbitView.WireFrame = Off;
+DefaultOrbitView.Axes = On;
+DefaultOrbitView.Grid = Off;
+DefaultOrbitView.SunLine = Off;
+DefaultOrbitView.UseInitialView = On;
+DefaultOrbitView.StarCount = 7000;
+DefaultOrbitView.EnableStars = On;
+DefaultOrbitView.EnableConstellations = On;
+
+Create GroundTrackPlot DefaultGroundTrackPlot;
+DefaultGroundTrackPlot.SolverIterations = Current;
+DefaultGroundTrackPlot.UpperLeft = [ 0.002520478890989288 0.453551912568306 ];
+DefaultGroundTrackPlot.Size = [ 0.5003150598613737 0.4502732240437158 ];
+DefaultGroundTrackPlot.RelativeZOrder = 762;
+DefaultGroundTrackPlot.Maximized = false;
+DefaultGroundTrackPlot.Add = {DefaultSC};
+DefaultGroundTrackPlot.DataCollectFrequency = 1;
+DefaultGroundTrackPlot.UpdatePlotFrequency = 50;
+DefaultGroundTrackPlot.NumPointsToRedraw = 0;
+DefaultGroundTrackPlot.ShowPlot = true;
+DefaultGroundTrackPlot.MaxPlotPoints = 20000;
+DefaultGroundTrackPlot.CentralBody = Earth;
+DefaultGroundTrackPlot.TextureMap = 'ModifiedBlueMarble.jpg';
+
+
+%----------------------------------------
+%---------- Mission Sequence
+%----------------------------------------
+
+BeginMissionSequence;
+Propagate DefaultProp(DefaultSC) {DefaultSC.ElapsedSecs = 12000.0};
