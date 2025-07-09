@@ -174,14 +174,19 @@ M_UOP = linspace(0,2*pi,1000);
 plot(x_new, y_new) %[output:867f0c60]
 legend('UOP','Uranus','Oberon Orbit','Titania Orbit','Umbriel Orbit','Ariel Orbit','Miranda Orbit','Mu Ring Outer Range','CRISPI Orbit','Location','NorthWest') %[output:867f0c60]
 
-%%
-%[text] ## Propagate
-% Create base plot to work with
-figure() %[output:8ec864ac]
-plot(x_UOP, y_UOP,'LineWidth',2) %[output:8ec864ac]
-set(gca, 'color', [0.95, 0.95, 0.95]) %[output:8ec864ac]
-axis equal %[output:8ec864ac]
-hold on %[output:8ec864ac]
+figure()
+plot(x_UOP, y_UOP,'LineWidth',2)
+set(gca, 'Color', 'k')
+set(gcf, 'Color', 'k')
+set(gca, 'XColor', 'w', 'YColor', 'w')
+axis equal
+hold on
+
+numStars = 300;
+xStars = (max(xlim)-min(xlim)) * rand(1, numStars) + min(xlim);
+yStars = (max(ylim)-min(ylim)) * rand(1, numStars) + min(ylim);
+scatter(xStars, yStars, 1, 'w', 'filled');
+
 
 % Uranus
 % [x_Ur, y_Ur] = CalculateOrbit(0, a, 0, r_Uranus);
