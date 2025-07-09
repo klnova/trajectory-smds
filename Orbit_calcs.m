@@ -174,18 +174,31 @@ M_UOP = linspace(0,2*pi,1000);
 plot(x_new, y_new) %[output:867f0c60]
 legend('UOP','Uranus','Oberon Orbit','Titania Orbit','Umbriel Orbit','Ariel Orbit','Miranda Orbit','Mu Ring Outer Range','CRISPI Orbit','Location','NorthWest') %[output:867f0c60]
 
-figure()
-plot(x_UOP, y_UOP,'LineWidth',2)
-set(gca, 'Color', 'k')
-set(gcf, 'Color', 'k')
-set(gca, 'XColor', 'w', 'YColor', 'w')
-axis equal
-hold on
+% Set background color to black
+set(gca, 'Color', 'k');       % Axes background
+set(gcf, 'Color', 'k');       % Figure background
 
-numStars = 300;
-xStars = (max(xlim)-min(xlim)) * rand(1, numStars) + min(xlim);
-yStars = (max(ylim)-min(ylim)) * rand(1, numStars) + min(ylim);
+% Make axes and labels white
+set(gca, 'XColor', 'w', 'YColor', 'w');
+xlabel('X [km]', 'Color', 'w', 'FontSize', 16);
+ylabel('Y [km]', 'Color', 'w', 'FontSize', 16);
+title('CRISPI Orbital Path', 'Color', 'w', 'FontSize', 20);
+
+% Set orbit line colors to light blue
+lines = findall(gca, 'Type', 'line');
+for i = 1:length(lines)
+    set(lines(i), 'Color', [0.6, 0.8, 1], 'LineWidth', 1.2);
+end
+
+% Add stars (white dots randomly scattered)
+numStars = 500;
+xStars = (max(xlim) - min(xlim)) * rand(1, numStars) + min(xlim);
+yStars = (max(ylim) - min(ylim)) * rand(1, numStars) + min(ylim);
 scatter(xStars, yStars, 1, 'w', 'filled');
+
+% Ensure equal axis and turn on grid if wanted
+axis equal;
+
 
 
 % Uranus
