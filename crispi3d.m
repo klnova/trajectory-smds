@@ -1,4 +1,4 @@
-%% # CRISPI-MS Delta V Calculations - 3D Version
+
 clc
 clear
 %%
